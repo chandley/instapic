@@ -11,4 +11,9 @@ Feature: Basic Navigation
     Given I am on the homepage as an anonymous visitor
     When I click 'sign up'
     Then I should be invited to enter an email and password
+
+    Scenario: Sign up
+    Given I am on the homepage as an anonymous visitor
+    When I go to sign-up page and enter my details 
+    Then I should be logged on
    
