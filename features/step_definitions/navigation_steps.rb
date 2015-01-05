@@ -30,5 +30,5 @@ When(/^I go to sign\-up page and enter my details$/) do
 end
 
 Then(/^I should be logged on$/) do
-  expect(page).to have_content('Welcome test@example.com')
+  expect(page).to have_content('Sign out')
 end
