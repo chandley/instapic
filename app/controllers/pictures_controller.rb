@@ -1,6 +1,6 @@
 class PicturesController < ApplicationController
   def index
-    render text: 'Welcome to instapic'
+    render 'index'
   end
 
 end
