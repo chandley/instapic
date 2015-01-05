@@ -3,5 +3,6 @@ Feature: Anonymous user
     A visitor
     Should see some pictures and a welcome message
 
-    Scenario: Given I am on the homepage
+    Scenario: Welcome to instagram
+    When I am on the homepage as an anonymous visitor
     Then page should have content 'welcome to instapic'
