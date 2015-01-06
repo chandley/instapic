@@ -8,8 +8,8 @@ Then(/^page should have content 'welcome to instapic'$/) do
   expect(page).to have_content("welcome to instapic")
 end
 
-When(/^I click 'sign up'$/) do
-  click_link 'Sign up'
+When(/^I click '(.*?)'$/) do |link|
+  click_link link
 end
 
 Then(/^I should be invited to enter an email and password$/) do

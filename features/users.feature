@@ -9,7 +9,7 @@ Feature: Basic Navigation
 
     Scenario: Decide to sign up
     Given I am on the homepage as an anonymous visitor
-    When I click 'sign up'
+    When I click 'Sign up'
     Then I should be invited to enter an email and password
 
     Scenario: Sign up

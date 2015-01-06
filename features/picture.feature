@@ -5,6 +5,6 @@ Feature: Add pictures
 
   Scenario: Add first picture
   Given I am a signed in user
-  When I add a picture
-  Then the picture should appear on the homepage
+  When I add an image
+  Then the image should appear on the homepage
   
