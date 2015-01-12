@@ -32,3 +32,18 @@ end
 Then(/^I should be logged on$/) do
   expect(page).to have_content('Sign out')
 end
+
+Given(/^I have signed in as a user$/) do
+  step 'I go to sign-up page and enter my details'
+end
+
+When(/^I upload a photo with a caption$/) do
+  attach_file 'Picture', Rails.root.join('features/images/cat.jpg')
+  fill_in('caption', with: "picture of cat")
+  click_button('Add picture')
+end
+
+Then(/^I should see my photo on the site$/) do
+  expect(page).to have_content('picture of cat')
+  expect(page).to have_css 'img.uploaded-pic'
+end
